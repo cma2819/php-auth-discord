@@ -1,5 +1,5 @@
 {
-    "name": "cma/authenticate-with-discord",
+    "name": "cma/auth-discord",
     "type": "library",
     "license": "MIT",
     "authors": [
