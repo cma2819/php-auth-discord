@@ -99,4 +99,69 @@ class User implements JsonSerializable
             'public_flags' => $this->publicFlags,
         ];
     }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    public function getDiscriminator()
+    {
+        return $this->discriminator;
+    }
+
+    public function getAvatar()
+    {
+        return $this->avatar;
+    }
+
+    public function getBot()
+    {
+        return $this->bot;
+    }
+
+    public function getSystem()
+    {
+        return $this->system;
+    }
+
+    public function getMfaEnabled()
+    {
+        return $this->mfaEnabled;
+    }
+
+    public function getLocale()
+    {
+        return $this->locale;
+    }
+
+    public function getVerified()
+    {
+        return $this->verified;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function getFlags()
+    {
+        return $this->flags;
+    }
+
+    public function getPremiumType()
+    {
+        return $this->premiumType;
+    }
+
+    public function getPublicFlags()
+    {
+        return $this->publicFlags;
+    }
 }
