@@ -1,0 +1,7 @@
+# directories
+vendor
+
+# files
+.phpunit.result.cache
+composer.lock
+phpunit.xml

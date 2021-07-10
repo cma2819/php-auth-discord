@@ -1,0 +1,32 @@
+{
+    "name": "cma/authenticate-with-discord",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cma",
+            "email": "chicchaima@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AuthDiscord\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": [
+            "phpunit"
+        ]
+    }
+}
