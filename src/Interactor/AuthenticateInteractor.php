@@ -38,7 +38,7 @@ final class AuthenticateInteractor extends Interactor implements AuthenticateInt
         ];
 
         return $this->interact(function () use ($parameters) {
-            $response = $this->client->post('oauth2/token', [
+            $response = $this->client->post('token', [
                 RequestOptions::FORM_PARAMS => $parameters,
             ]);
 

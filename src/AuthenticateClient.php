@@ -6,7 +6,7 @@ use GuzzleHttp\Client as GuzzleHttpClient;
 
 class AuthenticateClient extends GuzzleHttpClient {
 
-    protected const API_BASE_URI = 'https://discord.com/api/oauth2/authorize';
+    protected const API_BASE_URI = 'https://discord.com/api/oauth2';
 
     function __construct(
         ?array $guzzleOption = []
