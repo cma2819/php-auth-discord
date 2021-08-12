@@ -6,7 +6,7 @@ use GuzzleHttp\Client as GuzzleHttpClient;
 
 class Client extends GuzzleHttpClient {
 
-    protected const API_BASE_URI = 'https://discord.com/api/v9';
+    protected const API_BASE_URI = 'https://discord.com/api/v9/';
 
     function __construct(
         ?array $guzzleOption = []
