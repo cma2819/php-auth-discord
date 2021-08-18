@@ -48,11 +48,9 @@ class AuthDiscord
     }
 
     /**
-     * @param string $clientId
-     * @param string $clientSecret
      * @param string $code
      * @param string $redirectUrl
-     * @param OAuthScope $scopes
+     * @param string[] $scopes
      * @return string
      */
     public function getAuthenticateToken(string $code, string $redirectUrl, array $scopes): string
