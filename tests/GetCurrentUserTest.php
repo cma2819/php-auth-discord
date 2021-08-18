@@ -18,6 +18,8 @@ class GetCurrentUserTest extends TestCase
     {
         $stack = HandlerStack::create(CurrentUserResponseMockHandler::create());
         $authDiscord = new AuthDiscord(
+            'clientId',
+            'clientSecret',
             null,
             new Client([
                 'handler' => $stack,
@@ -51,6 +53,8 @@ class GetCurrentUserTest extends TestCase
     {
         $stack = HandlerStack::create(NotFoundResponseMockHandler::create());
         $authDiscord = new AuthDiscord(
+            'clientId',
+            'clientSecret',
             null,
             new Client([
                 'handler' => $stack,

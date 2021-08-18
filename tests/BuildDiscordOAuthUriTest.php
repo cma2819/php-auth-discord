@@ -11,10 +11,12 @@ class BuildDiscordOAuthUriTest extends TestCase
     /** @test */
     public function testSuccessToBuild()
     {
-        $authDiscord = new AuthDiscord();
+        $authDiscord = new AuthDiscord(
+            '123456789',
+            'clientSecret'
+        );
 
         $result = $authDiscord->buildDiscordOAuthUri(
-            '123456789',
             'staterandom',
             'https://redirect.example.com',
             [

@@ -16,14 +16,14 @@ class GetAuthenticateTokenTest extends TestCase
     {
         $stack = HandlerStack::create(OAuthTokenResponseMockHandler::create());
         $authDiscord = new AuthDiscord(
+            'clientId',
+            'clientSecret',
             new AuthenticateClient([
                 'handler' => $stack,
             ])
         );
 
         $result = $authDiscord->getAuthenticateToken(
-            'client_id',
-            'client_secret',
             'codestring',
             'https://example.com',
             [
